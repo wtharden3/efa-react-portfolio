@@ -9,7 +9,7 @@ const App: FC = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Whitney's EFA Portfolio</p>
+        <p>Whitney's EFA Portfolio - Develop</p>
         <Button type="primary">This is an Ant Design Button</Button>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
