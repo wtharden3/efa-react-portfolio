@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.less';
 import { Button } from 'antd';
-import Header from './Components/Header/Header'
-import About from './Components/About/About';
-import Projects from './Components/Projects/Projects';
-import Skills from './Components/Skills/Skills';
-import Contact from './Components/Contact/Contact';
-import Footer  from './Components/Footer/Footer';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Home from './Components/Home/Home';
+import Resume from './Components/Resume/Resume';
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Header />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-        <Footer />
+        <Router>
+          <div>
+            <Link to="/">Home</Link>
+            <br/>
+            <Link to="/resume">Resume</Link>
+          </div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/resume" component={Resume} />
+          </Switch>
+        </Router>
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>Whitney's EFA Portfolio - Develop</p>
         <Button type="primary">This is an Ant Design Button</Button>
@@ -35,6 +38,6 @@ const App = () => {
       </header>
     </div>
   );
-}
+};
 
 export default App;
