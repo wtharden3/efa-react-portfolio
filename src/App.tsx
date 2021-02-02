@@ -1,16 +1,14 @@
-//import React from 'react';
-import { FC } from 'react';
 import logo from './logo.svg';
+import './App.less';
 import { Button } from 'antd';
 import Header from './Components/Header/Header'
-import './App.less';
 import About from './Components/About/About';
 import Projects from './Components/Projects/Projects';
 import Skills from './Components/Skills/Skills';
 import Contact from './Components/Contact/Contact';
-import { Footer } from 'antd/lib/layout/layout';
+import Footer  from './Components/Footer/Footer';
 
-const App: FC = () => {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
