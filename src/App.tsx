@@ -1,12 +1,16 @@
-import React from 'react';
+//import React from 'react';
+import { FC } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { Button } from 'antd';
+import './App.less';
 
-function App() {
+const App: FC = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <p>Whitney's EFA Portfolio</p>
+        <Button type="primary">This is an Ant Design Button</Button>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>

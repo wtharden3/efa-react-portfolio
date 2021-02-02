@@ -1,3 +1,8 @@
+# My Eleven Fifty Academy Web Development Portfolio
+
+This portfolio is based on projects that I completed during the 3 month full time
+web development bootcamp.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
